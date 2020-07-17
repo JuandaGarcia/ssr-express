@@ -8,14 +8,14 @@ import Layout from '../components/Layout'
 
 const App = () => (
 	<BrowserRouter>
-		<Switch>
-			<Layout>
+		<Layout>
+			<Switch>
 				<Route exact path="/" component={Home} />
 				<Route exact path="/login" component={Login} />
 				<Route exact path="/register" component={Register} />
 				<Route component={NotFound} />
-			</Layout>
-		</Switch>
+			</Switch>
+		</Layout>
 	</BrowserRouter>
 )
 
